@@ -1,0 +1,77 @@
+
+<html>
+    <head>
+        <title>Sign Up</title>
+         <link rel="icon" href="myicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css1.css">
+        <script type="text/javascript">
+            function over(element)
+            {
+                element.style.color="#ff0099";
+                
+            }
+            function out(element)
+            {
+                element.style.color="white";
+                
+            }
+         
+function validLogin(){
+if (document.form.name.value===""){
+alert ( "Please enter Login Name." );
+
+}
+if (document.form.p.value===""){
+alert ( "Please enter phone number." );
+
+}
+if (document.form.pass.value===""){
+alert ( "Please enter password." );
+
+}
+alert ( "Welcome User" );
+return true;
+}
+
+        </script>
+    </head>
+     <body style="background-image:url(bg1.jpg);font-family: cooper black; color:white;">
+        <div id="header1" style=" font-size:40;">
+            <img src="logo.jpg" width="100" height="80" alt="logo loading">
+         Pizza Point....
+        </div>
+        <div id="header1" style=" font-size:20px;" >
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.html" onmouseover="over(this);" onmouseout="out(this);">HOME</a>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" onmouseover="over(this);" onmouseout="out(this);">SIGN UP</a>
+            
+        </div>
+         <div id="log" style="width:100%; height:80%;padding:20px; margin:30px;">
+             <center>
+             <h3> Fill Details TO Sign Up</h3>
+             <form name="form" method="post" action="signup.jsp">
+             <table cellspacing="20px" border="0">
+                 <tr>
+                     <td> Name : </td>
+                     <td> <input type="text" id="textbox" name="name" size="20" placeholder="Name"> </td>
+                 </tr>
+                 <tr>
+                     <td> Phone : </td>
+                     <td> <input type="text" id="textbox"  name="phone" size="20" placeholder="Phone"></td>
+                 </tr>
+                 <tr>
+                     <td> Password : </td>
+                     <td> <input type="password"  id="textbox" name="pass" size="20" placeholder="Password"></td>
+                 </tr>
+                 <tr>
+                     <td colspan="2" align="center"> <input type="submit" value="Sign Up" id="textbox"></td>
+                 </tr>
+             </table>
+             </form>
+             </center>
+         </div>
+  </body>
+</html>

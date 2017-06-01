@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Home Page</title>
+         <link rel="icon" href="myicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css1.css">
+        <script type="text/javascript">
+            function over(element)
+            {
+                element.style.color="#ff0099";
+                
+            }
+            function out(element)
+            {
+                element.style.color="white";
+                
+            }
+            function tboxin(element)
+            {
+                element.style.background="gold";
+                
+            }
+            function tboxout(element)
+            {
+                element.style.background="white";
+                
+            }
+            function v()
+            {
+                var1=document.form.name.value;
+                var2=document.form.phone.value;
+                var3=document.form.pass.value;
+                if(var2===""||var3==="")
+                {
+                    alert("Empty fields not allowed");
+                }
+            }
+        </script>
+    </head>
+    <body style="background-image:url(bg1.jpg);font-family: cooper black; color:white;">
+        <div id="header1" style=" font-size:40;">
+            <img src="logo.jpg" width="100" height="80" alt="logo loading">
+         Pizza Point....
+        </div>
+        <div id="header1" style=" font-size:20px;" >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" onmouseover="over(this);" onmouseout="out(this);">HOME</a>
+          
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;
+                      
+            <a href="filldetails.html" onmouseover="over(this);" onmouseout="out(this);">SIGN UP</a>
+            
+              <p><small><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          (NEW USERS SIGN UP)</em></small></p>
+        </div>
+        <div id="log" style="padding: 20px; margin:30px;"><center>
+                <img id="im1" src="PIZZA1.gif" width="500" height="350" alt="logo loading"
+                     onmouseover="document.getElementById('im1').src='pic1.jpg'"
+                     onmouseout="document.getElementById('im1').src='PIZZA1.gif'"></center>
+        </div>
+       <div id="log" style="font-size:20;padding: 20px; margin:50px;">
+           <center>   
+               Please Login to Proceed
+              
+<form action="valid.jsp" method="GET" name="form">
+     <table border="0" cellspacing="20px"> <tr><td>
+    Name : </td><td>
+<input type="text" id="textbox" placeholder="Name" name="name" onfocus="tboxin(this)" onblur="tboxout(this)" >
+</td></tr><tr><td>  </td><td>  </td></tr><tr><td>
+        Phone Number :</td><td>
+                 <input type="text" id="textbox" placeholder="Phone Number" name="phone" onfocus="tboxin(this) " onblur="tboxout(this)">
+</td></tr><tr><td>  </td><td>  </td></tr><tr><td>
+        Password :</td><td>
+<input type="password" id="textbox" placeholder="Password" name="pass" onfocus="tboxin(this)" onblur="tboxout(this)">
+    </td></tr><tr><td>  </td><td>  </td></tr><tr><td colspan="2" align="center">
+
+       <input  type="submit" id="textbox" style="width:150px; background-color:#00aaff;" value="Login" onclick="v()"></td></tr>
+
+               </table> 
+</form>
+           </center>
+       </div>
+        <div id="footer">
+            <marquee>
+                <img src="spon.png" alt="no img" height="100" width="400">
+                <img src="spon1.png" alt="no img" height="100" width="400">
+                 <img src="spon2.png" alt="no img" height="100" width="400">
+                  <img src="spon3.png" alt="no img" height="100" width="400">
+            </marquee>
+        </div>
+    </body>
+</html>

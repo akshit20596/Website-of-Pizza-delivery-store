@@ -1,0 +1,51 @@
+#header1{
+    width:50%;
+    height:10%;
+    color:white;
+    float:left;
+   backface-visibility:visible;
+  
+}
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+a{
+    text-decoration: none;
+    color:white;
+     animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+#textbox{
+    height:30px; 
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    
+}
+
+#log{
+    
+    width:40%;
+    height:50%;
+    float:left;
+    padding: 20px;
+   color:white;
+  
+}
+
+#footer{
+    width:100%;
+    height :20%;
+    
+    float:left;
+    
+   
+}
